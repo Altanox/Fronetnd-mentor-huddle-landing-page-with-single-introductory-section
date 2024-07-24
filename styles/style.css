@@ -1,0 +1,129 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+  background: url("../images/bg-mobile.svg"), hsl(257, 40%, 49%);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media (min-width: 40rem) {
+  body {
+    background: url("../images/bg-desktop.svg"), hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 40rem) {
+  .flex {
+    flex-direction: row;
+    gap: 2em;
+  }
+  .flex .hero--img {
+    width: 60%;
+  }
+  .flex .hero--message {
+    width: 40%;
+  }
+}
+
+.nav {
+  margin: 0 auto;
+  padding: 1em 0;
+}
+
+.logo {
+  max-width: 9em;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero--img {
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media (min-width: 40rem) {
+  .hero--message {
+    text-align: left;
+  }
+}
+
+.text {
+  padding-bottom: 1em;
+}
+
+.socials {
+  margin-top: 5em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  align-items: center;
+}
+@media (min-width: 40rem) {
+  .socials {
+    margin-left: auto;
+    justify-content: flex-end;
+  }
+}
+
+.social-icon {
+  margin: 0;
+  padding: 0;
+  width: 1.5rem;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  cursor: pointer;
+  filter: brightness(0) saturate(100%) invert(33%) sepia(80%) saturate(5738%) hue-rotate(311deg) brightness(90%) contrast(96%);
+}
+
+.btn {
+  font-weight: 600;
+  color: hsl(257, 40%, 49%);
+  width: 80%;
+  max-width: 12rem;
+  padding: 1em;
+  background-color: #fff;
+  border-radius: 100vh;
+  cursor: pointer;
+  text-decoration: none;
+  border: 0;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: hsl(300, 69%, 71%);
+  color: #fff;
+  box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.3);
+}/*# sourceMappingURL=style.css.map */
